@@ -5,10 +5,10 @@
           <v-app-bar-nav-icon class="d-flex d-md-none"></v-app-bar-nav-icon>
           <v-toolbar-title class='title'>
               <a class="logo" href="/">
-                Title
+                Ecommerce
               </a>
           </v-toolbar-title>
-        <v-spacer class="d-flex d-lg-none "></v-spacer>
+        <v-spacer class="d-flex d-lg-none"></v-spacer>
           <v-toolbar-items>
                 <div class="searchBar d-none d-sm-none d-lg-flex d-md-block">
                     <v-autocomplete append-icon="mdi-magnify" />
