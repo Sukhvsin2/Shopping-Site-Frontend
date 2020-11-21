@@ -14,6 +14,7 @@
         </v-row>
       </v-container>
       <LatestViews title="Latest Brands"/>
+      <Footer/>
   </v-app>
 </template>
 
@@ -22,6 +23,7 @@ import Navbar from "@/components/Navbar";
 import Slider from "@/components/Slider"
 import LatestViews from "@/components/showcase/LatestViews"
 import Advertisement from "@/components/showcase/Advertisement"
+import Footer from "@/components/Footer"
 
 export default {
     name: 'Home',
@@ -29,7 +31,8 @@ export default {
         Navbar,
         Slider,
         LatestViews,
-        Advertisement
+        Advertisement,
+        Footer
     }
 
 }
