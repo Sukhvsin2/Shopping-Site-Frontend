@@ -1,6 +1,8 @@
 import Vue from "vue"
 import VueRouter from "vue-router"
-import Home from "@/views/Home"
+import HomeView from "@/views/Home"
+import Home from "@/components/Home"
+import SearchProducts from "@/components/products/SearchProducts"
 import PageNotFound from "@/views/PageNotFound"
 
 Vue.use(VueRouter)
@@ -8,9 +10,20 @@ Vue.use(VueRouter)
 const routes = [
     {
         path: '/',
-        name: 'Home',
-        component: Home
+        component: HomeView,
+        children: [
+            {
+                path: '',
+                component: Home
+            },
+            {
+                path: 'search',
+                component: SearchProducts
+            },
+        ]
+        
     },
+    
     {
         path: '*',
         name: 'PageNotFound',

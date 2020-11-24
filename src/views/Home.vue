@@ -1,37 +1,19 @@
 <template>
   <v-app>
       <Navbar/>
-      <Slider/>
-      <LatestViews title="Latest Items"/>
-      <v-container>
-        <v-row>
-            <v-col cols="6">
-                <Advertisement/>
-            </v-col>
-            <v-col cols="6">
-                <Advertisement/>
-            </v-col>
-        </v-row>
-      </v-container>
-      <LatestViews title="Latest Brands"/>
+        <router-view/>
       <Footer/>
   </v-app>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar";
-import Slider from "@/components/Slider"
-import LatestViews from "@/components/showcase/LatestViews"
-import Advertisement from "@/components/showcase/Advertisement"
 import Footer from "@/components/Footer"
 
 export default {
-    name: 'Home',
+    name: 'HomeView',
     components: {
         Navbar,
-        Slider,
-        LatestViews,
-        Advertisement,
         Footer
     }
 

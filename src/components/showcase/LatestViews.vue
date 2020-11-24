@@ -9,6 +9,9 @@
                             <v-img aspect-ratio="1" height="150" width="150" contain src="https://source.unsplash.com/500x500/?puppy,cats" lazy-src="https://source.unsplash.com/500x500/?puppy,cats"></v-img>
                         </v-card-title>
                         <v-card-text>content</v-card-text>
+                        <v-card-actions>
+                            <v-btn depressed :to="`/search`">View</v-btn>
+                        </v-card-actions>
                     </v-card>
                 </v-slide-item>
             </v-slide-group>
