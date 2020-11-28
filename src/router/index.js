@@ -4,6 +4,7 @@ import HomeView from "@/views/Home"
 import Home from "@/components/Home"
 import SearchProducts from "@/components/products/SearchProducts"
 import PageNotFound from "@/views/PageNotFound"
+import Account from "@/components/login/Account"
 
 Vue.use(VueRouter)
 
@@ -21,9 +22,12 @@ const routes = [
                 component: SearchProducts
             },
         ]
-        
     },
-    
+    {
+        path: '/account',
+        name: 'Account',
+        component: Account
+    },
     {
         path: '*',
         name: 'PageNotFound',

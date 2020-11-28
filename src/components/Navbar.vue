@@ -15,7 +15,7 @@
                 </div>
                 <v-spacer></v-spacer>
                 <div class="buttons">
-                    <v-btn text>Login</v-btn>
+                    <v-btn to="/account" text>Login</v-btn>
                     <v-menu offset-y>
                         <template v-slot:activator="{on, attrs}">
                             <v-btn class="d-none d-md-none d-lg-flex" v-on="on" v-bind="attrs" text>more</v-btn>
